@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_python_flask_demo_1697512189263-pr-trigger-input-set
+  identifier: Build_python_flask_demo_1697512189263prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_python_flask_demo_1697512189263
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>

